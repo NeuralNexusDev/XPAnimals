@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "template",
+  "id": "xpanimals",
   "version": "${version}",
-  "name": "Template",
+  "name": "XP's Animals",
   "description": "Template",
   "authors": [
     {
@@ -11,7 +11,11 @@
         "sources": "https://github.com/p0t4t0sandwich/",
         "homepage": "https://links.sperrer.ca/"
       }
+    },
+    {
+      "name": "LyndenSylvester"
     }
+
   ],
   "contact": {
     "repo": "https://github.com/p0t4t0sandwich/Template"
