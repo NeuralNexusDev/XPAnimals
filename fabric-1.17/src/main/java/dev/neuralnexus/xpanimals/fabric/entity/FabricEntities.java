@@ -1,6 +1,5 @@
 package dev.neuralnexus.xpanimals.fabric.entity;
 
-import dev.neuralnexus.xpanimals.XPAnimals;
 import dev.neuralnexus.xpanimals.fabric.entity.custom.FabricRedPandaEntity;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
