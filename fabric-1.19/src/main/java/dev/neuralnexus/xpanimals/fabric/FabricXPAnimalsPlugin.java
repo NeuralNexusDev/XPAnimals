@@ -1,21 +1,24 @@
 package dev.neuralnexus.xpanimals.fabric;
 
 import dev.neuralnexus.xpanimals.common.TemplatePlugin;
-import dev.neuralnexus.xpanimals.fabric.events.server.FabricServerStartingEvent;
-import dev.neuralnexus.xpanimals.fabric.events.server.FabricServerStoppedEvent;
 import net.fabricmc.api.DedicatedServerModInitializer;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
  * The Template Fabric plugin.
  */
-public class FabricTemplatePlugin implements DedicatedServerModInitializer, TemplatePlugin {
+public class FabricXPAnimalsPlugin implements DedicatedServerModInitializer, TemplatePlugin {
+    public static final String MOD_ID = "xpanimals";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+
     /**
      * @inheritDoc
      */
     @Override
     public Object pluginLogger() {
-        return LoggerFactory.getLogger("taterapi");
+        return LOGGER;
     }
 
     /**
@@ -39,7 +42,7 @@ public class FabricTemplatePlugin implements DedicatedServerModInitializer, Temp
      */
     @Override
     public void registerHooks() {
-        FabricServerStartingEvent.EVENT.register(server -> {});
+        ServerLifecycleEvents.SERVER_STARTING.register(server -> {});
     }
 
     /**
@@ -60,6 +63,6 @@ public class FabricTemplatePlugin implements DedicatedServerModInitializer, Temp
     @Override
     public void onInitializeServer() {
         pluginStart();
-        FabricServerStoppedEvent.EVENT.register(server -> pluginStop());
+        ServerLifecycleEvents.SERVER_STOPPED.register(server -> pluginStop());
     }
 }

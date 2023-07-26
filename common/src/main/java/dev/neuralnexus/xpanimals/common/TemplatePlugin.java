@@ -19,15 +19,7 @@ public interface TemplatePlugin {
      * @param message The message to log
      */
     default void useLogger(String message) {
-        Object logger = pluginLogger();
-
-        if (logger instanceof java.util.logging.Logger) {
-            ((java.util.logging.Logger) logger).info(message);
-        } else if (logger instanceof org.slf4j.Logger) {
-            ((org.slf4j.Logger) logger).info(message);
-        } else {
-            System.out.println(message);
-        }
+        System.out.println(message);
     }
 
     /**

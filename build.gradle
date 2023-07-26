@@ -7,7 +7,7 @@ defaultTasks('build')
 subprojects {
     apply(plugin: 'java')
 
-    group = 'ca.sperrer.p0t4t0sandwich'
+    group = 'dev.neuralnexus'
     version = '1.0.0'
 
     sourceCompatibility = 1.8
@@ -26,20 +26,14 @@ subprojects {
             url = "https://jitpack.io"
         }
 
-        // Bukkit/Bungee
+        // GeckoLib
         maven {
-            name = "spigotmc-repo"
-            url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
-        }
-        maven {
-            name = "sonatype"
-            url = "https://oss.sonatype.org/content/groups/public/"
-        }
-
-        // Paper
-        maven {
-            name = "papermc-repo"
-            url = "https://repo.papermc.io/repository/maven-public/"
+            name = 'GeckoLib'
+            url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
         }
     }
+}
+
+clean {
+    delete "target"
 }

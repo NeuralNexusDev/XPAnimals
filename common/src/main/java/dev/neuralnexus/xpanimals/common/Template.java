@@ -39,13 +39,7 @@ public class Template {
      * @param message The message to log
      */
     public static void useLogger(String message) {
-        if (logger instanceof java.util.logging.Logger) {
-            ((java.util.logging.Logger) logger).info(message);
-        } else if (logger instanceof org.slf4j.Logger) {
-            ((org.slf4j.Logger) logger).info(message);
-        } else {
-            System.out.println(message);
-        }
+        System.out.println(message);
     }
 
     /**

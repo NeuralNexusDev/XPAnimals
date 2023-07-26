@@ -80,18 +80,18 @@ rm -rf ./common
 
 # --------------------------- Prepare Forge and Fabric --------------------------------
 
-# Prepare Fabric 1.17 files
-FABRIC_VERSION=1.17
+# Prepare Fabric 1.19 files
+FABRIC_VERSION=1.19
 prepareFiles fabric-$FABRIC_VERSION
 
-# Prepare Forge 1.20 files
-#FORGE_VERSION=1.20
-#prepareFiles forge-$FORGE_VERSION
+# Prepare Forge 1.19 files
+FORGE_VERSION=1.19
+prepareFiles forge-$FORGE_VERSION
 
 # --------------------------- Build 1.19 --------------------------------
 MC_VERSION=1.19
-FABRIC_VERSION=1.17
-FORGE_VERSION=NA
+FABRIC_VERSION=1.19
+FORGE_VERSION=1.19
 OUT_FILE=$PROJ_NAME-$VERSION-$MC_VERSION
 
 build $FABRIC_VERSION $FORGE_VERSION $OUT_FILE

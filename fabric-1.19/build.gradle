@@ -1,15 +1,8 @@
 import net.fabricmc.loom.task.RemapJarTask
 
 plugins {
-    id('com.github.johnrengelman.shadow') version('7.1.2')
-    id('fabric-loom') version('1.1-SNAPSHOT')
-}
-
-archivesBaseName = 'XPAnimals'
-
-repositories {
-    maven { url 'https://maven.fabricmc.net/' }
-    mavenLocal()
+    id('com.github.johnrengelman.shadow') version('8.1.1')
+    id('fabric-loom') version('1.3-SNAPSHOT')
 }
 
 dependencies {
@@ -21,11 +14,13 @@ dependencies {
     modImplementation("net.fabricmc:fabric-loader:${project.loader_version}")
 
     // GeckoLib Fabric
-    modImplementation 'software.bernie.geckolib:geckolib-fabric-1.17:3.0.32'
+    modImplementation('software.bernie.geckolib:geckolib-fabric-1.17:3.0.32')
 
     // Fabric API
     Set<String> apiModules = [
-            'fabric-api-base'
+            'fabric-api-base',
+            'fabric-lifecycle-events-v1',
+            'fabric-object-builder-api-v1'
     ]
 
     apiModules.forEach {
@@ -52,10 +47,8 @@ shadowJar {
         include(project(":common"))
         exclude('/mappings/*')
     }
-    relocate('com.google.gson', 'dev.neuralnexus.xpanimals.lib.gson')
 
-    archiveName("XPAnimals-${version}-fabric-${minecraft_version}-dev.jar")
-    classifier('')
+    archiveFileName = "XPAnimals-${version}-fabric-${minecraft_version}-dev.jar"
 }
 
 task remappedShadowJar(type: RemapJarTask) {
@@ -63,7 +56,7 @@ task remappedShadowJar(type: RemapJarTask) {
     input.set(tasks.shadowJar.archiveFile)
     addNestedDependencies.set(true)
 
-    destinationDir(file('../target'))
+    destinationDirectory = file('../target')
     archiveFileName = "XPAnimals-${version}-fabric-${minecraft_version}.jar"
 }
 remappedShadowJar.doLast {
