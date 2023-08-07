@@ -14,7 +14,7 @@ dependencies {
     modImplementation("net.fabricmc:fabric-loader:${project.loader_version}")
 
     // GeckoLib Fabric
-    modImplementation('software.bernie.geckolib:geckolib-fabric-1.17:3.0.32')
+    modImplementation('software.bernie.geckolib:geckolib-fabric-1.19:3.1.40')
 
     // Fabric API
     Set<String> apiModules = [

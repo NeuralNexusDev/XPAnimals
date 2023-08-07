@@ -41,6 +41,6 @@
     "fabric-object-builder-api-v1": "*",
     "fabric-rendering-v1": "*",
     "minecraft": ">=${minecraft_version}",
-    "geckolib": ">=3.0.32"
+    "geckolib": ">=3.1.40"
   }
 }
