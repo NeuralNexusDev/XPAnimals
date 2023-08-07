@@ -21,11 +21,14 @@
     "repo": "https://github.com/p0t4t0sandwich/Template"
   },
   "license": "GPL-3",
-  "icon": "assets/Template/icon.png",
+  "icon": "assets/XPAnimals/icon.png",
   "environment": "*",
   "entrypoints": {
     "server": [
       "dev.neuralnexus.xpanimals.fabric.FabricXPAnimalsPlugin"
+    ],
+    "client": [
+      "dev.neuralnexus.xpanimals.fabric.FabricXPAnimalsClient"
     ]
   },
   "mixins": [
@@ -36,6 +39,7 @@
     "fabric-api-base": "*",
     "fabric-lifecycle-events-v1": "*",
     "fabric-object-builder-api-v1": "*",
+    "fabric-rendering-v1": "*",
     "minecraft": ">=${minecraft_version}",
     "geckolib": ">=3.0.32"
   }
