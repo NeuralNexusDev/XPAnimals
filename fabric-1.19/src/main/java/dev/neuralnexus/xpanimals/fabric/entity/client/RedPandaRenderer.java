@@ -20,7 +20,7 @@ public class RedPandaRenderer extends GeoEntityRenderer<FabricRedPandaEntity> {
 
     @Override
     public Identifier getTextureLocation(FabricRedPandaEntity object) {
-        return new Identifier(FabricMain.MOD_ID, "textures/entity/Red_Panda.png");
+        return new Identifier(FabricMain.MOD_ID, "textures/entity/red_panda.png");
     }
 
    @Override

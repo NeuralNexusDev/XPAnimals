@@ -35,7 +35,9 @@ dependencies {
             'fabric-api-base',
             'fabric-lifecycle-events-v1',
             'fabric-object-builder-api-v1',
-            'fabric-rendering-v1'
+            'fabric-rendering-v1',
+            'fabric-item-api-v1',
+            'fabric-item-groups-v0'
     ]
 
     apiModules.forEach {
