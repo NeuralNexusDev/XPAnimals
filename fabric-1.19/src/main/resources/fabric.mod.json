@@ -3,7 +3,7 @@
   "id": "xpanimals",
   "version": "${version}",
   "name": "XP's Animals",
-  "description": "Adds ",
+  "description": "Adds a bunch of neat animals to the game!",
   "authors": [
     {
       "name": "p0t4t0sandwich",
@@ -18,12 +18,15 @@
 
   ],
   "contact": {
-    "repo": "https://github.com/p0t4t0sandwich/Template"
+    "repo": "https://github.com/NeuralNexusDev/XPAnimals"
   },
   "license": "GPL-3",
-  "icon": "assets/XPAnimals/icon.png",
+  "icon": "assets/xpanimals/icon.png",
   "environment": "*",
   "entrypoints": {
+    "main": [
+      "dev.neuralnexus.xpanimals.fabric.FabricMain"
+    ],
     "server": [
       "dev.neuralnexus.xpanimals.fabric.FabricXPAnimalsPlugin"
     ],
