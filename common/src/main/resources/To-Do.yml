@@ -1,0 +1,11 @@
+# Lynden's To-Do List
+
+Per_Animal:
+- Animal Model & Renderer in entity/client
+- Animal Entity in entity/custom
+- Animal Animations in Animations
+- Animal Geo in Geo
+- Update en_us.json w/ Animal
+- Animal Spawn egg in model/item
+- Animal in textures/entity
+- Animal spawn egg in textures/item

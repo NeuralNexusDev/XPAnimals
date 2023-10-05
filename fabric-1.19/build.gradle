@@ -37,7 +37,8 @@ dependencies {
             'fabric-object-builder-api-v1',
             'fabric-rendering-v1',
             'fabric-item-api-v1',
-            'fabric-item-groups-v0'
+            'fabric-item-groups-v0',
+            'fabric-biome-api-v1'
     ]
 
     apiModules.forEach {

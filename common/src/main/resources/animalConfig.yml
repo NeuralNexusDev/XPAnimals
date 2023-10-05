@@ -1,0 +1,104 @@
+---
+#========================================#
+#                                        #
+#             The XP Network             #
+#                                        #
+#               Animal Mod               #
+#                                        #
+#                 Config                 #
+#                                        #
+#========================================#
+
+# Customizable Animal Config
+
+Spawn_Custom_Animals:
+
+  # Toggle ALL Animal Spawns on/off
+  Spawn: true
+
+  # Animal Master control
+  Animals:
+
+    # individual Animals
+    Red_Panda:
+
+      weight: 35
+      minSpawnGroup: 1
+      maxSpawnGroup: 4
+
+  # Toggle Spawns by Biome
+  Biomes:
+
+    # Toggle ALL biomes on/off
+    Master_Biome: true
+
+    # Toggle individual biomes on/of
+
+    # Overworld Biomes
+    OCEAN: true
+    DEEP_OCEAN: true
+    WARM_OCEAN: true
+    LUKEWARM_OCEAN: true
+    DEEP_LUKEWARM_OCEAN: true
+    COLD_OCEAN: true
+    DEEP_COLD_OCEAN: true
+    FROZEN_OCEAN: true
+    DEEP_FROZEN_OCEAN: true
+    MUSHROOM_FIELDS: true
+    JAGGED_PEAKS: true
+    FROZEN_PEAKS: true
+    STONY_PEAKS: true
+    MEADOW: true
+    CHERRY_GROVE: true
+    GROVE: true
+    SNOWY_SLOPES: true
+    WINDSWEPT_HILLS: true
+    WINDSWEPT_GRAVELLY_HILLS: true
+    WINDSWEPT_FOREST: true
+    FOREST: true
+    FLOWER_FOREST: true
+    TAIGA: true
+    OLD_GROWTH_PINE_TAIGA: true
+    OLD_GROWTH_SPRUCE_TAIGA: true
+    SNOWY_TAIGA: true
+    BIRCH_FOREST: true
+    OLD_GROWTH_BIRCH_FOREST: true
+    DARK_FOREST: true
+    JUNGLE: true
+    SPARSE_JUNGLE: true
+    BAMBOO_JUNGLE: true
+    RIVER: true
+    FROZEN_RIVER: true
+    SWAMP: true
+    MANGROVE_SWAMP: true
+    BEACH: true
+    SNOWY_BEACH: true
+    STONY_SHORE: true
+    PLAINS: true
+    SUNFLOWER_PLAINS: true
+    SNOWY_PLAINS: true
+    ICE_SPIKES: true
+    DESERT: true
+    SAVANNA: true
+    SAVANNA_PLATEAU: true
+    WINDSWEPT_SAVANNA: true
+    BADLANDS: true
+    WOODED_BADLANDS: true
+    ERODED_BADLANDS: true
+    DEEP_DARK: true
+    DRIPSTONE_CAVES: true
+    LUSH_CAVES: true
+
+    # Nether Biomes
+    NETHER_WASTES: true
+    SOUL_SAND_VALLEY: true
+    CRIMSON_FOREST: true
+    WARPED_FOREST: true
+    BASALT_DELTAS: true
+
+    # End Biomes
+    THE_END: true
+    SMALL_END_ISLANDS: true
+    END_MIDLANDS: true
+    END_HIGHLANDS: true
+    END_BARRENS: true
