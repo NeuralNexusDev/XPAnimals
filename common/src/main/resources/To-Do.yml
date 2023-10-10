@@ -13,6 +13,3 @@ Per_Animal:
 Orca:
   - Extend Orca model so the head doesn't detach visually
   - updated geo.json and png
-
-Git Test:
-  - Author Commit Test
