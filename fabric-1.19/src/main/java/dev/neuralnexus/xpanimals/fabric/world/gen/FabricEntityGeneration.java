@@ -1,4 +1,4 @@
-/*
+
 package dev.neuralnexus.xpanimals.fabric.world.gen;
 
 import dev.neuralnexus.xpanimals.fabric.entity.FabricEntities;
@@ -44,4 +44,4 @@ public class FabricEntityGeneration {
 
     }
 }
-*/
+

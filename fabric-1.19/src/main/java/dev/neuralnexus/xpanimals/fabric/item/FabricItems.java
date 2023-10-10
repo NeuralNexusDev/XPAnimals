@@ -14,6 +14,10 @@ public class FabricItems {
             new SpawnEggItem(FabricEntities.Red_Panda, 0xb6510e, 0x1a1a1b,
                     new FabricItemSettings().group(FabricItemGroup.XPANIMALZ).maxCount(1)));
 
+    public static final Item ORCA_SPAWN_EGG = registerItem("orca_spawn_egg",
+            new SpawnEggItem(FabricEntities.Orca, 0x000000, 0xffffff,
+                    new FabricItemSettings().group(FabricItemGroup.XPANIMALZ).maxCount(1)));
+
     public static final Item XP_LOGO = registerItem("xp_logo",
             new Item(new FabricItemSettings().group(FabricItemGroup.XPANIMALZ)));
 
