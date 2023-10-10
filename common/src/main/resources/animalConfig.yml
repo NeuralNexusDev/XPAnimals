@@ -26,6 +26,12 @@ Spawn_Custom_Animals:
       minSpawnGroup: 1
       maxSpawnGroup: 4
 
+    Orca:
+
+      weight: 35
+      minSpawnGroup: 1
+      maxSpawnGroup: 4
+
   # Toggle Spawns by Biome
   Biomes:
 

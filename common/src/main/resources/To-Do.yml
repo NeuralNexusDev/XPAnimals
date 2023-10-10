@@ -9,3 +9,7 @@ Per_Animal:
 - Animal Spawn egg in model/item
 - Animal in textures/entity
 - Animal spawn egg in textures/item
+
+Orca:
+  - Extend Orca model so the head doesn't detach visually
+  - updated geo.json and png

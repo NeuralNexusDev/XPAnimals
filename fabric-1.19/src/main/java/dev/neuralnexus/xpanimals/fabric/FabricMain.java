@@ -1,6 +1,7 @@
 package dev.neuralnexus.xpanimals.fabric;
 
 import dev.neuralnexus.xpanimals.fabric.entity.FabricEntities;
+import dev.neuralnexus.xpanimals.fabric.entity.custom.FabricOrcaEntity;
 import dev.neuralnexus.xpanimals.fabric.entity.custom.FabricRedPandaEntity;
 import dev.neuralnexus.xpanimals.fabric.item.FabricItemGroup;
 import dev.neuralnexus.xpanimals.fabric.item.FabricItems;
@@ -26,6 +27,7 @@ public class FabricMain implements ModInitializer {
         GeckoLib.initialize();
 
         FabricDefaultAttributeRegistry.register(FabricEntities.Red_Panda, FabricRedPandaEntity.setAttributes());
+        FabricDefaultAttributeRegistry.register(FabricEntities.Orca, FabricOrcaEntity.setAttributes());
 
     }
 }
