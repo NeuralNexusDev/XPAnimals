@@ -24,7 +24,7 @@ public class OrcaModel extends AnimatedGeoModel<FabricOrcaEntity> {
 
     @Override
     public Identifier getAnimationResource(FabricOrcaEntity animatable) {
-        return new Identifier(FabricMain.MOD_ID, "animations/orca_swim.animation.json");
+        return new Identifier(FabricMain.MOD_ID, "animations/orca_model.animation.json");
     }
 
     @SuppressWarnings({ "unchecked", "rawTypes"})

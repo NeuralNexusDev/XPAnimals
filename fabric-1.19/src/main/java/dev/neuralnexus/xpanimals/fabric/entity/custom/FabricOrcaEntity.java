@@ -196,11 +196,11 @@ public class FabricOrcaEntity extends WaterCreatureEntity implements IAnimatable
     // Replace w/ Proper Animations
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if (event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.model.walking", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.orca.swim", true));
             return PlayState.CONTINUE;
         }
 
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.model.tail_sway", true));
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.orca.idle", true));
         return PlayState.CONTINUE;
     }
 
