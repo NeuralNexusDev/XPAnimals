@@ -9,3 +9,6 @@ Per_Animal:
 - Animal Spawn egg in model/item
 - Animal in textures/entity
 - Animal spawn egg in textures/item
+
+Spawn_Master:
+- Check Animals against each biome instead of biomes against each animal

@@ -36,6 +36,7 @@ public class FabricEntityGeneration {
         //   }
         //  else {
         //      # skip adding of biomes
+        //      continue;
 
         BiomeModifications.addSpawn(BiomeSelectors.includeByKey(BiomeKeys.BAMBOO_JUNGLE),
                 SpawnGroup.CREATURE, FabricEntities.Red_Panda, 35, 1, 2);
